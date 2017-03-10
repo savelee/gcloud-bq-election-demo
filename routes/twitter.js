@@ -2,8 +2,8 @@ var express = require('express'),
   router = express.Router(),
   Stream = require('user-stream');
 
-var machinelearning = require('../routes/ml'); //added in a later step
-var bigquery = require('../routes/BigQuery');
+var machinelearning = require('./routes/ml'); //added in a later step
+var bigquery = require('./routes/BigQuery'); //added in a later step
 
 //setup the twitter stream API, and provide your consumer and access tokens
 const stream = new Stream({
